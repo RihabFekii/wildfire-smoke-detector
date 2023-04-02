@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - data/raw/wildfire-raw-yolov8
+    - src/train.py
+    - src/params.yaml
+    outs:
+    - runs/:
+        persist: true
