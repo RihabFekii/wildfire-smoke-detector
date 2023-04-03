@@ -5,6 +5,10 @@ stages:
     - data/raw/wildfire-raw-yolov8
     - src/train.py
     - src/params.yaml
+    - src/utils.py
     outs:
-    - runs/:
+    - models/model.pt:
         persist: true
+    metrics:
+    - reports/train_metrics.csv:
+        cache: false

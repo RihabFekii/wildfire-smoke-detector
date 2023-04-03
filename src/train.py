@@ -1,13 +1,15 @@
-from ultralytics import YOLO
-import yaml
-from pathlib import Path
 import os
+from pathlib import Path
+
+import yaml
+from ultralytics import YOLO
+
+from utils import save_metrics, save_model
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]  # root directory absolute path
 DATA_DIR = os.path.join(ROOT_DIR, "data/raw/wildfire-raw-yolov8")
 DATA_YAML = os.path.join(DATA_DIR, "data.yaml")
-print(DATA_YAML)
 
 
 if __name__ == '__main__':
@@ -31,8 +33,13 @@ if __name__ == '__main__':
         name=params['name']
     )
 
-    # evaluate model 
-    model.val()
+    # save model
+    save_model(experiment_name=params['name']) 
+
+    # save metrics 
+    save_metrics(experiment_name=params['name'])
+
+
 
 
 

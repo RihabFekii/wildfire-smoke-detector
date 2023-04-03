@@ -1,0 +1,25 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/raw/wildfire-raw-yolov8
+      md5: ffe9083905cf64817ca61146b3356bb6.dir
+      size: 28867246
+      nfiles: 1482
+    - path: src/params.yaml
+      md5: a0c123b909925d3386149e8b024832a0
+      size: 215
+    - path: src/train.py
+      md5: d2675f1ccbf8af2b7c25485e47c4c783
+      size: 990
+    - path: src/utils.py
+      md5: e1585268f1a61213ac6e51f7abf0d47f
+      size: 1090
+    outs:
+    - path: models/model.pt
+      md5: 8198bbc4220f971f09595a135320f968
+      size: 6226104
+    - path: reports/train_metrics.csv
+      md5: fb687ccb189b9b1fe433eac7c2b4304f
+      size: 672
