@@ -7,8 +7,9 @@ stages:
     - src/params.yaml
     - src/utils.py
     outs:
-    - models/model.pt:
-        persist: true
+    - models/
+    - reports/train_params.yaml:
+        cache: false
     metrics:
     - reports/train_metrics.csv:
         cache: false
