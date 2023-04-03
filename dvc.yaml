@@ -5,7 +5,6 @@ stages:
     - data/raw/wildfire-raw-yolov8
     - src/train.py
     - src/params.yaml
-    - src/utils.py
     outs:
     - models/
     - reports/train_params.yaml:
