@@ -15,7 +15,7 @@ def save_model(experiment_name: str) -> None:
 
 
 def save_metrics(experiment_name: str) -> None:
-    """ saves training metrics and confusion matrix to the reports directory """ 
+    """ saves training metrics, params and confusion matrix to the reports directory """ 
     if os.path.isdir('runs'):
         path_metrics = os.path.join(ROOT_DIR, "runs/detect", experiment_name)
         # save experiment training metrics  
@@ -23,5 +23,8 @@ def save_metrics(experiment_name: str) -> None:
 
         # save the confusion matrix associated to the training experiment
         shutil.copy(src=f'{path_metrics}/confusion_matrix.png', dst=f'{ROOT_DIR}/reports/train_confision_matric.png')
+
+        # save training params
+        shutil.copy(src=f'{path_metrics}/args.yaml', dst=f'{ROOT_DIR}/reports/train_params.yaml')
     
     
