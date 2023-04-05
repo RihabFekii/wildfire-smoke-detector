@@ -7,19 +7,19 @@ stages:
       md5: ffe9083905cf64817ca61146b3356bb6.dir
       size: 28867246
       nfiles: 1482
-    - path: src/params.yaml
-      md5: a0c123b909925d3386149e8b024832a0
+    - path: params.yaml
+      md5: 54726043d2a91378df53a641d25d5dac
       size: 215
     - path: src/train.py
-      md5: d2675f1ccbf8af2b7c25485e47c4c783
-      size: 990
-    - path: src/utils.py
-      md5: e1585268f1a61213ac6e51f7abf0d47f
-      size: 1090
+      md5: 8cde4fe436744929ddbaeaadb37aad71
+      size: 986
     outs:
     - path: models/model.pt
-      md5: 8198bbc4220f971f09595a135320f968
-      size: 6226104
+      md5: 63fce0b37345cecfc51b75a871d46560
+      size: 22495096
     - path: reports/train_metrics.csv
-      md5: fb687ccb189b9b1fe433eac7c2b4304f
+      md5: d3ee99e7a651b8b69535c7dcff8ea64d
       size: 672
+    - path: reports/train_params.yaml
+      md5: a13c7b98780812835f127700894323c7
+      size: 1501

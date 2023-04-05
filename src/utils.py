@@ -22,9 +22,10 @@ def save_metrics(experiment_name: str) -> None:
         shutil.copy(src=f'{path_metrics}/results.csv', dst=f'{ROOT_DIR}/reports/train_metrics.csv')
 
         # save the confusion matrix associated to the training experiment
-        shutil.copy(src=f'{path_metrics}/confusion_matrix.png', dst=f'{ROOT_DIR}/reports/train_confision_matric.png')
+        shutil.copy(src=f'{path_metrics}/confusion_matrix.png', dst=f'{ROOT_DIR}/reports/train_confusion_matrix.png')
 
         # save training params
         shutil.copy(src=f'{path_metrics}/args.yaml', dst=f'{ROOT_DIR}/reports/train_params.yaml')
     
-    
+
+save_model('yolov8s_exp_v0')

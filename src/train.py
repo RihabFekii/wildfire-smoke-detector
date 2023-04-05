@@ -14,7 +14,7 @@ DATA_YAML = os.path.join(DATA_DIR, "data.yaml")
 
 if __name__ == '__main__':
 
-    with open(r"src/params.yaml") as f:
+    with open(r"params.yaml") as f:
         params = yaml.safe_load(f)
 
     # load a pre-trained model 

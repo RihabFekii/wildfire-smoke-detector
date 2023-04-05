@@ -4,9 +4,10 @@ stages:
     deps:
     - data/raw/wildfire-raw-yolov8
     - src/train.py
-    - src/params.yaml
+    params:
+    - params.yaml
     outs:
-    - models/
+    - models/model.pt
     - reports/train_params.yaml:
         cache: false
     metrics:
