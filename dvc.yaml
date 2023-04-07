@@ -4,7 +4,7 @@ stages:
     deps:
     - data/raw/wildfire-raw-yolov8
     - src/train.py
-    params:
+    - src/utils.py
     - params.yaml
     outs:
     - models/model.pt

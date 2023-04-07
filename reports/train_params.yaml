@@ -2,7 +2,7 @@ task: detect
 mode: train
 model: yolov8s.pt
 data: /Users/rihabfeki/Desktop/wildfire-smoke-detector/data/raw/wildfire-raw-yolov8/data.yaml
-epochs: 1
+epochs: 20
 patience: 50
 batch: 8
 imgsz: 640

@@ -3,7 +3,7 @@ pretrained: True
 seed: 0
 imgsz: 640 
 batch: 8 
-epochs: 1
+epochs: 20
 optimizer: SGD # other choices=['SGD', 'Adam', 'AdamW', 'RMSProp']
 lr0: 0.01  # learning rate 
 name: 'yolov8s_exp_v0' # experiment name
