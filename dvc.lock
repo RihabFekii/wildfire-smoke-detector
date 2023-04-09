@@ -8,21 +8,21 @@ stages:
       size: 28867246
       nfiles: 1482
     - path: params.yaml
-      md5: a061a8a3138da65df56595927ca325f6
-      size: 216
+      md5: f2fc712e78c50f898902306181630ead
+      size: 215
     - path: src/train.py
-      md5: 8cde4fe436744929ddbaeaadb37aad71
-      size: 986
+      md5: 8402b07d9f68ed886e86f8b644b2a843
+      size: 2002
     - path: src/utils.py
-      md5: 3ecd480350d0d8edb7e4ba533bb555ad
-      size: 1253
+      md5: 4d04addab005a6475665898aae662ace
+      size: 1815
     outs:
     - path: models/model.pt
-      md5: 31c95b64b4a92e32e26ca67d99ffc401
-      size: 22495096
+      md5: 7fe4c6173c334d2e926e71236366b8e0
+      size: 6226104
     - path: reports/train_metrics.csv
-      md5: 30cf68a8a216e4dcfbde8717fa882e9f
-      size: 7056
+      md5: 464bce4270bb543ea8741659367b6b9d
+      size: 1008
     - path: reports/train_params.yaml
-      md5: 5c58f717d9f2b23de0e7483ba7fbf2b2
-      size: 1502
+      md5: 2ea9f04ec479dd1db02f44263b2c8328
+      size: 1501

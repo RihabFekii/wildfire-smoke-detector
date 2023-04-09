@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: yolov8s.pt
+model: yolov8n.pt
 data: /Users/rihabfeki/Desktop/wildfire-smoke-detector/data/raw/wildfire-raw-yolov8/data.yaml
-epochs: 20
+epochs: 2
 patience: 50
 batch: 8
 imgsz: 640
@@ -12,7 +12,7 @@ cache: false
 device: null
 workers: 8
 project: null
-name: yolov8s_exp_v0
+name: yolov8n_exp_v0
 exist_ok: false
 pretrained: true
 optimizer: SGD
@@ -92,4 +92,4 @@ copy_paste: 0.0
 cfg: null
 v5loader: false
 tracker: botsort.yaml
-save_dir: /Users/rihabfeki/Desktop/wildfire-smoke-detector/runs/detect/yolov8s_exp_v0
+save_dir: /Users/rihabfeki/Desktop/wildfire-smoke-detector/runs/detect/yolov8n_exp_v0
