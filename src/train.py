@@ -6,7 +6,7 @@ import yaml
 from dotenv import load_dotenv
 from ultralytics import YOLO
 
-from utils import convert_metrics_csv_to_json, save_metrics_and_params, save_model
+from utils import save_metrics_and_params, save_model
 
 
 load_dotenv()
@@ -53,9 +53,7 @@ if __name__ == '__main__':
         mlflow.log_param('learning_rate', params['lr0'])
 
         # save model
-        model_path = save_model(experiment_name=params['name']) 
-        # log model artifact to mlflow 
-        mlflow.log_artifact(model_path)
+        save_model(experiment_name=params['name']) 
 
         # save metrics csv file and training params 
         save_metrics_and_params(experiment_name=params['name'])
