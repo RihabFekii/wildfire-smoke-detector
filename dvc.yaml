@@ -13,3 +13,9 @@ stages:
     metrics:
     - reports/train_metrics.csv:
         cache: false
+  test:
+    cmd: python src/predict.py
+    deps:
+      - data/raw/wildfire-raw-yolov8
+      - models/model.pt
+      - src/predict.py

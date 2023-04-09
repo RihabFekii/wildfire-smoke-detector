@@ -8,21 +8,34 @@ stages:
       size: 28867246
       nfiles: 1482
     - path: params.yaml
-      md5: a061a8a3138da65df56595927ca325f6
-      size: 216
+      md5: a0c123b909925d3386149e8b024832a0
+      size: 215
     - path: src/train.py
-      md5: 8cde4fe436744929ddbaeaadb37aad71
-      size: 986
+      md5: 6746a939a17bbf4e2e2bd23a226b69ec
+      size: 1774
     - path: src/utils.py
-      md5: 3ecd480350d0d8edb7e4ba533bb555ad
-      size: 1253
+      md5: 5440f0cb53d7c318e2233a2414c32147
+      size: 1228
     outs:
     - path: models/model.pt
-      md5: 31c95b64b4a92e32e26ca67d99ffc401
-      size: 22495096
+      md5: 7fe4c6173c334d2e926e71236366b8e0
+      size: 6226104
     - path: reports/train_metrics.csv
-      md5: 30cf68a8a216e4dcfbde8717fa882e9f
-      size: 7056
+      md5: 464bce4270bb543ea8741659367b6b9d
+      size: 1008
     - path: reports/train_params.yaml
-      md5: 5c58f717d9f2b23de0e7483ba7fbf2b2
-      size: 1502
+      md5: 2ea9f04ec479dd1db02f44263b2c8328
+      size: 1501
+  test:
+    cmd: python src/predict.py
+    deps:
+    - path: data/raw/wildfire-raw-yolov8
+      md5: ffe9083905cf64817ca61146b3356bb6.dir
+      size: 28867246
+      nfiles: 1482
+    - path: models/model.pt
+      md5: 7fe4c6173c334d2e926e71236366b8e0
+      size: 6226104
+    - path: src/predict.py
+      md5: fa6b9e2cfac6cbe9a40e8d182a0a2f4c
+      size: 594
