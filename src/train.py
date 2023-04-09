@@ -54,13 +54,12 @@ if __name__ == '__main__':
 
         # save model
         model_path = save_model(experiment_name=params['name']) 
-        # log model path with mlflow 
+        # log model artifact to mlflow 
         mlflow.log_artifact(model_path)
 
         # save metrics csv file and training params 
         save_metrics_and_params(experiment_name=params['name'])
-        # convert metrics from csv to json
-        convert_metrics_csv_to_json(metrics_path, params['name'])
+
 
 
          
