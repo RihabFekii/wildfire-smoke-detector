@@ -8,8 +8,8 @@ stages:
       size: 28867246
       nfiles: 1482
     - path: params.yaml
-      md5: a0c123b909925d3386149e8b024832a0
-      size: 215
+      md5: 90c8a91448adb21cc4696472b74a8488
+      size: 217
     - path: src/train.py
       md5: 6746a939a17bbf4e2e2bd23a226b69ec
       size: 1774
@@ -18,14 +18,14 @@ stages:
       size: 1228
     outs:
     - path: models/model.pt
-      md5: 7fe4c6173c334d2e926e71236366b8e0
-      size: 6226104
+      md5: a8fa6711eedec056b859e0f899f853ed
+      size: 22495096
     - path: reports/train_metrics.csv
-      md5: 464bce4270bb543ea8741659367b6b9d
-      size: 1008
+      md5: 3dff9c138e51118de8a8af9e6514a7a1
+      size: 2016
     - path: reports/train_params.yaml
-      md5: 2ea9f04ec479dd1db02f44263b2c8328
-      size: 1501
+      md5: af87c316be94e7fa041886e97287b048
+      size: 1503
   test:
     cmd: python src/predict.py
     deps:
@@ -34,8 +34,8 @@ stages:
       size: 28867246
       nfiles: 1482
     - path: models/model.pt
-      md5: 7fe4c6173c334d2e926e71236366b8e0
-      size: 6226104
+      md5: a8fa6711eedec056b859e0f899f853ed
+      size: 22495096
     - path: src/predict.py
-      md5: fa6b9e2cfac6cbe9a40e8d182a0a2f4c
-      size: 594
+      md5: 89e2f32ae1996a0c6ed060d658bc493d
+      size: 533
