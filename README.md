@@ -23,6 +23,10 @@ source env/bin/activate .
 make requirements
 `````
 
+4. Pull the data 
+````
+dvc pull
+````
 ## Run experiments with DVC 
 
 1. You can experiment with the different models of YOLOv8 and edit its hyperparameters 
