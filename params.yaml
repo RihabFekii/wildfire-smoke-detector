@@ -1,9 +1,9 @@
-model_type: yolov8n.pt
+model_type: yolov8s.pt
 pretrained: True
 seed: 0
 imgsz: 640 
 batch: 8 
-epochs: 1
-optimizer: SGD # other choices=['SGD', 'Adam', 'AdamW', 'RMSProp']
-lr0: 0.01  # learning rate 
-name: 'yolov8n_exp_v0' # experiment name
+epochs: 5
+optimizer: Adam # other choices=['SGD', 'Adam', 'AdamW', 'RMSProp']
+lr0: 0.001  # learning rate 
+name: 'yolov8s_exp_v1' # experiment name
