@@ -17,3 +17,25 @@ git clone https://github.com/RihabFekii/
 make env
 source env/bin/activate .
 ````
+
+3. Install requirements, by running this command:
+````shell
+make requirements
+`````
+
+## Run experiments with DVC 
+
+1. You can experiment with the different models of YOLOv8 and edit its hyperparameters 
+by editing the [params.yaml](/params.yaml) file. 
+
+2. Since the data pipeline is created with dvc, you can easily reproduce experiments by runing: 
+
+````sell
+dvc exp run 
+`````
+3. Visualize experiments by running: 
+````
+dvc exp show
+`````
+
+

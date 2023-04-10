@@ -9,6 +9,10 @@ env:
 	@echo ">>> A new virtual env is created. Activate it with:\nsource env/bin/activate ."
 
 
+requirements: 
+	@echo ">>> Installing project requirements"
+	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
+
 mlflow:
 	@echo ">>> Authenticating to MLflow remote server on DagsHub"
 	export MLFLOW_TRACKING_URI=$(MLFLOW_TRACKING_URI)
