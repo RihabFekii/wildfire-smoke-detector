@@ -18,6 +18,4 @@ if __name__ == '__main__':
 
     for images in glob.glob(f"{test_data_path}/*.jpg"):
         predictions = model.predict(images, save=True)
-        print(predictions)
-        print(type(predictions)) 
 
