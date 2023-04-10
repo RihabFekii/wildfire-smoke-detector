@@ -1,5 +1,6 @@
 # wildfire-smoke-detector
 An end-to-end ML project for wildfire smoke detection.
+Follow this [article](https://rihab-feki.medium.com/ml-project-using-yolov8-roboflow-dvc-and-mlflow-on-dagshub-3e5c0b026297) as a detailed guide. 
 
 This project is connected to a repository on [DagsHub](https://dagshub.com/Rihab.Feki/wildfire-smoke-detector). 
 
