@@ -3,7 +3,6 @@ ML project for wildfire smoke detection with YOLOv8.
 
 Follow this [article](https://rihab-feki.medium.com/ml-project-using-yolov8-roboflow-dvc-and-mlflow-on-dagshub-3e5c0b026297) as a detailed guide. 
 
-![prediction](runs/detect/yolov8s_exp_v1/val_batch1_pred.jpg)
 
 This project is connected to a repository on [DagsHub](https://dagshub.com/Rihab.Feki/wildfire-smoke-detector). 
 
